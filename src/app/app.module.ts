@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FullCalendarModule } from '@fullcalendar/angular'; 
 import dayGridPlugin from '@fullcalendar/daygrid'; 
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http'
 import interactionPlugin from '@fullcalendar/interaction'; 
 import { ReactiveFormsModule } from '@angular/forms';
 FullCalendarModule.registerPlugins([ 
@@ -18,7 +19,8 @@ FullCalendarModule.registerPlugins([
   imports: [
     BrowserModule,
     FullCalendarModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

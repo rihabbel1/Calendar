@@ -18,20 +18,20 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Patient Name</label>
-              <input placeholder="Add Event Title" type="text" formControlName="title"  />
-              <!-- <div *ngIf="submitted && f.title.errors" ></div>
-              <div *ngIf="f.title.errors.required">Title is required</div> -->
+              <input placeholder="Add Patient Name" type="text" formControlName="title"  required/>
+              <!-- <div *ngIf="submitted && f.title.errors"></div> -->
+              <!-- <div *ngIf="f.title.errors.required">Title is required</div> -->
           </div>
         </div>
       </div>
       <div class="col-sm-12">
         <div class="form-group">
               <label>Appoinement Date:</label>
-              <div class="form-control "></div>
+              <div class="form-control eventstarttitle"></div>
            </div>
      </div> 
    
-   <button type="submit" class="btn btn-primary">Submit</button>
+   <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
 
     </form>
 
